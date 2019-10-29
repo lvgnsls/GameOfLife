@@ -3,5 +3,8 @@
 
 
 void confMundo();
-
+void limparMundo();
+void geracaoInicial();
+void mostrarMundo();
+ 
 #endif

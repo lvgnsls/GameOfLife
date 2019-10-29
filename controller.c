@@ -38,5 +38,29 @@ void geracaoInicial(){
 		}	
 		
 	}
-	
 }
+
+void limparMundo(){
+	int buscX = 0;
+	int buscY = 0;
+	for(buscX = 0; buscX < tamanhoMundo; buscX++)
+	{
+		for(buscY = 0; buscY < tamanhoMundo; buscY++)
+		{
+			mundo[buscY][buscX].status = FALSE;
+		}
+	}			
+}
+ void mostrarMundo()
+ {
+ 		int buscX = 0;
+	int buscY = 0;
+	for(buscX = 0; buscX < tamanhoMundo; buscX++)
+	{
+		for(buscY = 0; buscY < tamanhoMundo; buscY++)
+		{
+			printf("linha: %d\tcoluna: %d\tvalor: %d\n", buscY, buscX, mundo[buscY][buscX].status);
+			
+		}
+	}		
+ }
